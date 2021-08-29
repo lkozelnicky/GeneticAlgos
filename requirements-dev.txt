@@ -1,0 +1,8 @@
+-r requirements.txt
+black==21.7b0
+docutils
+mypy
+pytest
+pytest-cov
+Sphinx
+sphinx-rtd-theme==0.5.2
