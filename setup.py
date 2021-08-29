@@ -8,13 +8,13 @@ README = (PARENT_DIR / "README.rst").read_text()
 
 SETUP_ARGS = dict(
     name="GeneticAlgos",
-    version="1.0.0",
+    version="1.0.1",
     description="Simple and powerful Python library for creating genetic algorithms.",
     long_description=README,
     long_description_content_type="text/x-rst",
     url="https://geneticalgos.readthedocs.io/en/latest/",
     author="Lukas Kozelnicky",
-    author_email="pytyhon@kozelnicky.com",
+    author_email="python@kozelnicky.com",
     license="MIT",
     classifiers=[
         "Development Status :: 5 - Production/Stable",

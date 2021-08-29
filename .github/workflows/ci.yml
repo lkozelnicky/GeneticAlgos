@@ -27,6 +27,31 @@ jobs:
           pip install tox tox-gh-actions
       - name: Tox tests
         run: tox
+      - name: Coveralls
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COVERALLS_FLAG_NAME: python-${{ matrix.python-version }}
+          COVERALLS_PARALLEL: true
+        run: |
+          pip install coveralls
+          coveralls --service=github
+
+  coveralls:
+    name: test coverage push
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Finished
+        run: |
+          python -m pip install --upgrade pip
+          pip install coveralls
+          coveralls --finish --service=github
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   docs:
     runs-on: ubuntu-latest

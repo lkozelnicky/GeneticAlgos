@@ -4,6 +4,9 @@ Welcome to GeneticAlgos!
 .. image:: https://github.com/lkozelnicky/GeneticAlgos/workflows/Tests/badge.svg
         :target: https://github.com/lkozelnicky/GeneticAlgos/actions?query=workflow%3ATests+branch%3Amaster
 
+.. image:: https://coveralls.io/repos/github/lkozelnicky/GeneticAlgos/badge.svg?branch=master
+    :target: https://coveralls.io/github/lkozelnicky/GeneticAlgos?branch=master
+
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://github.com/psf/black
 
