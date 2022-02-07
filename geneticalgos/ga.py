@@ -823,7 +823,7 @@ class GeneticAlgo:
                 np.random.randint(low=0, high=self._population_size - 1)
             ]
 
-        self._population = self._new_population
+        self._population = self._new_population  # type: ignore
 
     def _get_final_results(self) -> None:
         """Get results after :meth:`simulate() <simulate>`.

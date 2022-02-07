@@ -30,7 +30,7 @@ complex optimization problems. GeneticAlgos is built on NumPy and it is under ac
 - A simple-to-use API to modify genetic algorithms parameters.
 - Lightweight and just one dependency - Numpy.
 - Excellent test coverage.
-- Tested on Python 3.7, 3.8 and 3.9
+- Tested on Python 3.7, 3.8, 3.9 and 3.10
 
 Source code
 ___________
